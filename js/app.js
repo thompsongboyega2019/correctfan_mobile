@@ -8,7 +8,7 @@ $(window).on('load', function () {
         case "splash":
             setTimeout(function () {
                 window.location.replace("landing.html");
-            }, 2000)
+            }, 4000)
             break;
 
 
@@ -108,7 +108,7 @@ $(window).on('load', function () {
                 introswiper.autoplay = false;
                 setTimeout(function () {
                     window.location.replace("signin.html");
-                }, 7000);
+                }, 5000);
             });
             break;
 

@@ -36,3 +36,12 @@ h1.splash_heading {
 span.splashTextHeading {
     color: var(--splashTextWhite) !important;
 }
+a.header_link {
+    color: var(--splashTextWhite);
+}
+p.afterSignInForm {
+    display: inline-block;
+}
+p.afterSignInForm:nth-child(2) {
+    float: right !important;
+} 
