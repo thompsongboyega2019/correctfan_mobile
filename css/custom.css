@@ -1,0 +1,38 @@
+:root {
+    --splash_screen: url(../img/bg/one.jpg);
+    --splash_screen_two: url(../img/bg/two.jpg);
+    --splashTextWhite: #fff;
+}
+body.correctFanSplashBody{
+background-color: #4a3257;
+background-image: var(--splash_screen_two);   
+background-size: cover;
+background-repeat: no-repeat;
+background-position-x: center;
+}
+div.mySplashBody {
+background-color: #4a3257;
+background-image: var(--splash_screen);   
+background-size: cover;
+background-repeat: no-repeat;
+background-position-x: center;
+}
+p.splashTextOne {
+color: var(--splashTextWhite);
+text-transform: uppercase;
+font-weight: 900;
+font-style: italic;
+font-size: 20px;
+}
+.header {
+    background-color: #4A3257;
+}
+a.skip_text {
+    color: var(--splashTextWhite);
+}
+h1.splash_heading {
+    font-size: 30px;
+}
+span.splashTextHeading {
+    color: var(--splashTextWhite) !important;
+}
