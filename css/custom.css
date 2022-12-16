@@ -41,15 +41,15 @@ right: 0;
 width: 100%;
 height: 100%;
 z-index: -1;
-animation: moveOut 2s ease-in-out forwards;
+/**animation: moveOut 4s ease-in-out forwards;**/
 }
-@keyframes moveOut {
+/**@keyframes moveOut {
     from { transform: scale(1)}
     to { transform: scale(2)}
     /**from { background-image: var(--loader_screen);}
-    to { background-image: var(--splash_screen);}**/
+    to { background-image: var(--splash_screen);}
     
-}
+}**/
 p.splashTextOne {
 color: var(--splashTextWhite);
 text-transform: uppercase;

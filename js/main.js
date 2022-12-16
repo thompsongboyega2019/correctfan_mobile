@@ -103,7 +103,7 @@ $(document).ready(function () {
 $(window).on('load', function () {
     setTimeout(function () {
         $('.loader-wrap').fadeOut('slow');
-    }, 1000);
+    }, 2000);
 
     /* coverimg */
     $('.coverimg').each(function () {
