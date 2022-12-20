@@ -2647,6 +2647,7 @@ textarea.form-control-lg {
   border: 1px solid transparent;
   transform-origin: 0 0;
   transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out;
+  color: var(--finwallapp-theme-text-secondary) !important;
 }
 
 @media (prefers-reduced-motion: reduce) {

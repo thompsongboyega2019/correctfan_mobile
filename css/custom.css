@@ -85,6 +85,9 @@ p.afterSignInForm:nth-child(6) {
 .signInLogoBackground {
     text-align: center;
 }
+.signInLogo {
+    margin-bottom: 2em;
+}
 .signinBody {
     background-color: #4A3257;
 }
@@ -140,6 +143,14 @@ a.facebookoptionbutton {
 }
 .signinformbottom {
     margin-top: 2em;
+    text-align: center;
+}
+.back_btn a {
+    color: #fff;
+}
+.existingUser {
+    margin-top: 1em;
+    text-align: center;
 }
 /** Desktop View **/
 /**@media (min-width: 1200px) {
