@@ -75,6 +75,75 @@ a.header_link {
 p.afterSignInForm {
     display: inline-block;
 }
-p.afterSignInForm:nth-child(2) {
+p.afterSignInForm:nth-child(6) {
     float: right !important;
 } 
+.welcomeText {
+    font-size: 1.5em;
+    /**font-weight: 900;**/
+}
+.signInLogoBackground {
+    text-align: center;
+}
+.signinBody {
+    background-color: #4A3257;
+}
+.signInFormRow {
+    width: 100%;
+    background-color: var(--splashTextWhite);
+    padding: 2rem;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+}
+.formHeading {
+    color: #fcac04;
+}
+.emailIcon {
+    position: absolute;
+    right: 0;
+    bottom: 10%;
+    font-size: 1.2em;
+}
+.loginbtn {
+    margin-top: 1.5em;
+}
+.divider_text {
+    text-align: center;
+}
+.divider_line {
+    position: relative;
+    top: -4px;
+}
+.or_section {
+    margin-top: 1em;
+} 
+a.googleoptionbutton {
+padding: 10px;
+outline: 1px solid #33a752;
+width: 100%;
+display: block;
+text-align: center;
+border-radius: 15px;
+background-color: #33a752;
+color: #fff;
+}
+.signinwithfacebook {
+    margin-top: 1em;
+}
+a.facebookoptionbutton {
+    outline: 1px solid #6b80ad;
+    background-color: #6b80ad;
+    color: #fff;
+}
+.optiontext {
+    margin-left: 1em;
+}
+.signinformbottom {
+    margin-top: 2em;
+}
+/** Desktop View **/
+/**@media (min-width: 1200px) {
+    .signInLogo {
+        right: 45%;
+      }
+  }**/
