@@ -3,46 +3,56 @@
     --splash_screen: url(../img/bg/two.jpg);
     --splashTextWhite: #fff;
 }
-main.correctFanSplashBody::before{
-content: "";
-background-color: #4a3257;
-background-image: var(--splash_screen);   
-background-size: cover;
-background-repeat: no-repeat;
-background-position-x: center;
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-z-index: -1;
-animation: moveIn 4s ease-in-out forwards;
+
+main.correctFanSplashBody::before {
+    content: "";
+    background-color: #4a3257;
+    background-image: var(--splash_screen);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    animation: moveIn 4s ease-in-out forwards;
 
 }
+
 @keyframes moveIn {
-    from { transform: scale(3)}
-    to { transform: scale(1)}
+    from {
+        transform: scale(3)
+    }
+
+    to {
+        transform: scale(1)
+    }
+
     /**from { background-image: var(--loader_screen);}
     to { background-image: var(--splash_screen);}**/
     /**from { transform: translateX(0)}
     to { transform: translateX(10px)}**/
-    
+
 }
+
 div.correctFanLoaderBody::before {
-content: " ";
-background-color: #4a3257;
-background-image: var(--loader_screen);   
-background-size: cover;
-background-repeat: no-repeat;
-background-position-x: center;
-position: fixed;
-top: 0;
-right: 0;
-width: 100%;
-height: 100%;
-z-index: -1;
-/**animation: moveOut 4s ease-in-out forwards;**/
+    content: " ";
+    background-color: #4a3257;
+    background-image: var(--loader_screen);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    /**animation: moveOut 4s ease-in-out forwards;**/
 }
+
 /**@keyframes moveOut {
     from { transform: scale(1)}
     to { transform: scale(2)}
@@ -51,46 +61,58 @@ z-index: -1;
     
 }**/
 p.splashTextOne {
-color: var(--splashTextWhite);
-text-transform: uppercase;
-font-weight: 900;
-font-style: italic;
-font-size: 20px;
+    color: var(--splashTextWhite);
+    text-transform: uppercase;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 20px;
 }
+
 .header {
     background-color: #4A3257;
 }
+
 a.skip_text {
     color: var(--splashTextWhite);
 }
+
 h1.splash_heading {
     font-size: 30px;
 }
+
 span.splashTextHeading {
     color: var(--splashTextWhite) !important;
 }
+
 a.header_link {
     color: var(--splashTextWhite);
 }
+
 p.afterSignInForm {
     display: inline-block;
 }
+
 p.afterSignInForm:nth-child(6) {
     float: right !important;
-} 
+}
+
 .welcomeText {
     font-size: 1.5em;
     /**font-weight: 900;**/
 }
+
 .signInLogoBackground {
     text-align: center;
 }
+
 .signInLogo {
     margin-bottom: 2em;
 }
+
 .signinBody {
     background-color: #4A3257;
 }
+
 .signInFormRow {
     width: 100%;
     background-color: var(--splashTextWhite);
@@ -98,60 +120,116 @@ p.afterSignInForm:nth-child(6) {
     border-top-right-radius: 30px;
     border-top-left-radius: 30px;
 }
-.formHeading {
+
+.formHeading,
+.user_name {
     color: #fcac04;
 }
+
 .emailIcon {
     position: absolute;
     right: 0;
     bottom: 10%;
     font-size: 1.2em;
 }
+
 .loginbtn {
     margin-top: 1.5em;
 }
+
 .divider_text {
     text-align: center;
 }
+
 .divider_line {
     position: relative;
     top: -4px;
 }
+
 .or_section {
     margin-top: 1em;
-} 
-a.googleoptionbutton {
-padding: 10px;
-outline: 1px solid #33a752;
-width: 100%;
-display: block;
-text-align: center;
-border-radius: 15px;
-background-color: #33a752;
-color: #fff;
 }
+
+a.googleoptionbutton {
+    padding: 10px;
+    outline: 1px solid #33a752;
+    width: 100%;
+    display: block;
+    text-align: center;
+    border-radius: 15px;
+    background-color: #33a752;
+    color: #fff;
+}
+
 .signinwithfacebook {
     margin-top: 1em;
 }
+
 a.facebookoptionbutton {
     outline: 1px solid #6b80ad;
     background-color: #6b80ad;
     color: #fff;
 }
+
 .optiontext {
     margin-left: 1em;
 }
+
 .signinformbottom {
     margin-top: 2em;
     text-align: center;
 }
+
 .back_btn a {
     color: #fff;
 }
+
 .existingUser {
     margin-top: 1em;
     text-align: center;
 }
+
+i.header_icon {
+    color: #fff;
+    font-size: 20px;
+}
+
+.header_logo {
+    display: block;
+}
+
+.card_counter {
+    margin: 0.2em auto;
+}
+
+.card_counter .card-body {
+    padding: 0.5em;
+}
+
+.counter_background {
+    background-color: #c7b0d4;
+    padding: 0.8em 0.5em 0.5em 0.5em;
+}
+
+.top_players {
+    text-align: right;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.top_players p>a {
+    color: #000;
+    font-size: 0.7em;
+    background-color: #fff;
+    padding: 0.3em 0.6em;
+    border-radius: 5px;
+}
+
+.user_name {
+    margin-bottom: 0.5em !important;
+    font-weight: 700;
+}
+
 /** Desktop View **/
 /**@media (min-width: 1200px) {
     .signInLogo {
