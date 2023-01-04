@@ -2,6 +2,7 @@
     --loader_screen: url(../img/bg/slide.jpg);
     --splash_screen: url(../img/bg/two.jpg);
     --splashTextWhite: #fff;
+    --hero: url(../img/bg/hero.jpg);
 }
 
 main.correctFanSplashBody::before {
@@ -97,7 +98,7 @@ p.afterSignInForm:nth-child(6) {
 }
 
 .welcomeText {
-    font-size: 1.5em;
+    font-size: 1.2em;
     /**font-weight: 900;**/
 }
 
@@ -208,7 +209,11 @@ i.header_icon {
 
 .counter_background {
     background-color: #c7b0d4;
-    padding: 0.8em 0.5em 0.5em 0.5em;
+    background-image: var(--hero);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0.8em 0 1em 0;
+    
 }
 
 .top_players {
@@ -218,16 +223,31 @@ i.header_icon {
 }
 
 .top_players p>a {
-    color: #000;
+    color: #4a3257;
     font-size: 0.7em;
     background-color: #fff;
-    padding: 0.3em 0.6em;
+    padding: 0.4em 0.8em;
     border-radius: 5px;
 }
 
-.user_name {
+.username {
     margin-bottom: 0.5em !important;
     font-weight: 700;
+    color: #fff;
+}
+
+.card_counter_border {
+    border: 1px solid #c7b0d4;
+    border-radius: 10px;
+}
+main.custom_main {
+    padding-top: 4rem !important;
+}
+.user_heading {
+    color: #fff;
+}
+.username_section {
+    margin-top: 1em;
 }
 
 /** Desktop View **/
