@@ -12583,7 +12583,7 @@ linearGradient stop:last-child {
 .card {
   background-color: var(--finwallapp-card-color);
   color: var(--finwallapp-card-text);
-  border-radius: var(--finwallapp-rounded);
+  /* border-radius: var(--finwallapp-rounded); */
   border: none;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
