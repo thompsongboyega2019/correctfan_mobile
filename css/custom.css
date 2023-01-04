@@ -249,7 +249,30 @@ main.custom_main {
 .username_section {
     margin-top: 1em;
 }
-
+.trending_title {
+    display: inline-block;
+}
+h6.trending_title:nth-of-type(2), h6.trending_title:nth-of-type(3) {
+    margin:0 0.5rem 0 0.5rem
+}
+a > small {
+    font-size: 0.775em !important;
+    color: rgba(49, 64, 75, 0.7);
+    font-weight: 700;
+}
+h6.trending_title:nth-of-type(4) {
+    float: right;
+}
+h6.trending_title:last-of-type a > small {
+    color: inherit; 
+}
+.trending{
+    color: #000;
+    font-weight: 700;
+}
+.active > small {
+    color: #000;
+}
 /** Desktop View **/
 /**@media (min-width: 1200px) {
     .signInLogo {
