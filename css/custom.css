@@ -273,6 +273,12 @@ h6.trending_title:last-of-type a > small {
 .active > small {
     color: #000;
 }
+a p.trending_league_name {
+    color: initial;
+}
+.size-15 {
+    font-size: 15px;
+}
 /** Desktop View **/
 /**@media (min-width: 1200px) {
     .signInLogo {
