@@ -382,10 +382,10 @@
             </div>
             <div class="row mb-2">
                 <div class="col">
-                    <h6 class="title trending_title fw-normal text-muted"><a href="" class="active"><small>50-50</small></a></h6>
-                    <h6 class="title trending_title fw-normal text-muted"><a href=""><small>OLYMPICS</small></a></h6>
-                    <h6 class="title trending_title fw-normal text-muted"><a href=""><small>CHAMPIONSHIP</small></a></h6>
-                    <h6 class="title trending_title fw-normal text-muted"><a href=""><small>VIEW ALL</small></a></h6>
+                    <h6 class="title trending_title fw-normal text-muted"><a id="fifty-fifty_title"  href="#" class="trending_nav active" onclick="showFiftyFifty()">50-50</a></h6>
+                    <h6 class="title trending_title fw-normal text-muted"><a id="olympics_title"  href="#" class="trending_nav" onclick="showOlympics()">OLYMPICS</a></h6>
+                    <h6 class="title trending_title fw-normal text-muted"><a id="championship_title" href="#" class="trending_nav" onclick="showChampionship()">CHAMPIONSHIP</a></h6>
+                    <h6 class="title trending_title fw-normal text-muted"><a id="view_all_title" href="#" class="trending_nav" onclick="showAll()">VIEW ALL</a></h6>
                 </div>
                
             </div>
@@ -394,7 +394,7 @@
                 <div class="col-12">
                     <div class="card">
                         <div class="card-body p-0">
-                            <ul class="list-group list-group-flush bg-none">
+                            <ul id="fifty-fifty" class="list-group list-group-flush bg-none">
                                 <li class="list-group-item">
                                     <a href="">
                                         <div class="row">
@@ -470,6 +470,164 @@
                                             </div>
                                         </div>
                                     </a>
+                                </li>
+                                <li class="list-group-item trending_loadmore">
+                                        <div class="row">
+                                            <div class="col align-self-center">
+                                                <h6 class="title trending_title fw-normal text-muted trending_loadmore"><a href=""><small>Load More</small></a></h6>
+                                            </div>
+                                        </div>
+                                </li>
+                            </ul>
+                            <ul id="olympics" class="list-group list-group-flush bg-none hide_trending">
+                                <li class="list-group-item">
+                                    <a href="">
+                                        <div class="row">
+                                            <div class="col-auto">
+                                                <div class="avatar avatar-40 shadow-sm card rounded-15 p-1">
+                                                    <img src="img/trending/ikeja.jpg" alt="" class="rounded-15">
+                                                </div>
+                                            </div>
+                                            <div class="col align-self-center ps-0">
+                                                <p class="text-secondary size-10 mb-0"><strong>27-10-2022</strong></p>
+                                                <p class="trending_league_name size-15">Davonche Cup</p>
+                                            </div>
+                                            <div class="col align-self-center text-end">
+                                                <p class="text-secondary text-muted size-10 mb-0"><strong>GUARANTEED POT</strong></p>
+                                                <p class="trending_league_name size-15">NGN 3,000,000</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="">
+                                        <div class="row">
+                                            <div class="col-auto">
+                                                <div class="avatar avatar-40 shadow-sm card rounded-15 p-1">
+                                                    <img src="img/trending/hot.jpg" alt="" class="rounded-15">
+                                                </div>
+                                            </div>
+                                            <div class="col align-self-center ps-0">
+                                                <p class="text-secondary size-10 mb-0"><strong>27-10-2022</strong></p>
+                                                <p class="trending_league_name size-15">Hot Hot 3</p>
+                                            </div>
+                                            <div class="col align-self-center text-end">
+                                                <p class="text-secondary text-muted size-10 mb-0"><strong>GUARANTEED POT</strong></p>
+                                                <p class="trending_league_name size-15">NGN 183,000,000</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="">
+                                        <div class="row">
+                                            <div class="col-auto">
+                                                <div class="avatar avatar-40 shadow-sm card rounded-15 p-1">
+                                                    <img src="img/company2.png" alt="" class="rounded-15">
+                                                </div>
+                                            </div>
+                                            <div class="col align-self-center ps-0">
+                                                <p class="text-secondary size-10 mb-0"><strong>27-10-2022</strong></p>
+                                                <p class="trending_league_name size-15">New Olympic Stand</p>
+                                            </div>
+                                            <div class="col align-self-center text-end">
+                                                <p class="text-secondary text-muted size-10 mb-0"><strong>GUARANTEED POT</strong></p>
+                                                <p class="trending_league_name size-15">NGN 183,000,000</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="">
+                                        <div class="row">
+                                            <div class="col-auto">
+                                                <div class="avatar avatar-40 shadow-sm card rounded-15 p-1">
+                                                    <img src="img/company3.jpg" alt="" class="rounded-15">
+                                                </div>
+                                            </div>
+                                            <div class="col align-self-center ps-0">
+                                                <p class="text-secondary size-10 mb-0"><strong>27-10-2022</strong></p>
+                                                <p class="trending_league_name size-15">UAT Olympic Stand</p>
+                                            </div>
+                                            <div class="col align-self-center text-end">
+                                                <p class="text-secondary text-muted size-10 mb-0"><strong>GUARANTEED POT</strong></p>
+                                                <p class="trending_league_name size-15">NGN 3.5,000,000</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="list-group-item trending_loadmore">
+                                        <div class="row">
+                                            <div class="col align-self-center">
+                                                <h6 class="title trending_title fw-normal text-muted trending_loadmore"><a href=""><small>Load More</small></a></h6>
+                                            </div>
+                                        </div>
+                                </li>
+                            </ul>
+                            <ul id="championship" class="list-group list-group-flush bg-none hide_trending">
+                                <li class="list-group-item">
+                                    <a href="">
+                                        <div class="row">
+                                            <div class="col-auto">
+                                                <div class="avatar avatar-40 shadow-sm card rounded-15 p-1">
+                                                    <img src="img/trending/ikeja.jpg" alt="" class="rounded-15">
+                                                </div>
+                                            </div>
+                                            <div class="col align-self-center ps-0">
+                                                <p class="text-secondary size-10 mb-0"><strong>27-10-2022</strong></p>
+                                                <p class="trending_league_name size-15">Testing Contest</p>
+                                            </div>
+                                            <div class="col align-self-center text-end">
+                                                <p class="text-secondary text-muted size-10 mb-0"><strong>GUARANTEED POT</strong></p>
+                                                <p class="trending_league_name size-15">NGN 3,000,000</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="">
+                                        <div class="row">
+                                            <div class="col-auto">
+                                                <div class="avatar avatar-40 shadow-sm card rounded-15 p-1">
+                                                    <img src="img/trending/hot.jpg" alt="" class="rounded-15">
+                                                </div>
+                                            </div>
+                                            <div class="col align-self-center ps-0">
+                                                <p class="text-secondary size-10 mb-0"><strong>27-10-2022</strong></p>
+                                                <p class="trending_league_name size-15">Busayo Double 2</p>
+                                            </div>
+                                            <div class="col align-self-center text-end">
+                                                <p class="text-secondary text-muted size-10 mb-0"><strong>GUARANTEED POT</strong></p>
+                                                <p class="trending_league_name size-15">NGN 183,000,000</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="">
+                                        <div class="row">
+                                            <div class="col-auto">
+                                                <div class="avatar avatar-40 shadow-sm card rounded-15 p-1">
+                                                    <img src="img/company3.jpg" alt="" class="rounded-15">
+                                                </div>
+                                            </div>
+                                            <div class="col align-self-center ps-0">
+                                                <p class="text-secondary size-10 mb-0"><strong>27-10-2022</strong></p>
+                                                <p class="trending_league_name size-15">UAT Champion</p>
+                                            </div>
+                                            <div class="col align-self-center text-end">
+                                                <p class="text-secondary text-muted size-10 mb-0"><strong>GUARANTEED POT</strong></p>
+                                                <p class="trending_league_name size-15">NGN 3.5,000,000</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="list-group-item trending_loadmore">
+                                        <div class="row">
+                                            <div class="col align-self-center">
+                                                <h6 class="title trending_title fw-normal text-muted trending_loadmore"><a href=""><small>Load More</small></a></h6>
+                                            </div>
+                                        </div>
                                 </li>
                             </ul>
                         </div>
@@ -626,6 +784,9 @@
 
     <!-- page level custom script -->
     <script src="js/app.js"></script>
+
+    <!-- Custom Js-->
+    <script src="js/custom.js"></script>
 
 </body>
 
