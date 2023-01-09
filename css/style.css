@@ -12321,7 +12321,7 @@ pre code {
 
 /* 4. text */
 .text-muted {
-  opacity: 0.7;
+  opacity: 0.5;
   color: inherit !important;
 }
 

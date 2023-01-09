@@ -252,7 +252,7 @@ main.custom_main {
 .trending_title {
     display: inline-block;
 }
-h6.trending_title:nth-of-type(2), h6.trending_title:nth-of-type(3) {
+li.trending_title:nth-of-type(2), li.trending_title:nth-of-type(3) {
     margin:0 0.5rem 0 0.5rem
 }
 .trending_nav {
@@ -260,10 +260,10 @@ h6.trending_title:nth-of-type(2), h6.trending_title:nth-of-type(3) {
     color: rgba(49, 64, 75, 0.7);
     font-weight: 700;
 }
-h6.trending_title:nth-of-type(4) {
+li.trending_title:nth-of-type(4) {
     float: right;
 }
-h6.trending_title:last-of-type a > small {
+li.trending_title:last-of-type a > small {
     color: inherit; 
 }
 .trending{
@@ -272,6 +272,7 @@ h6.trending_title:last-of-type a > small {
 }
 .active {
     color: #000 !important;
+    opacity: 1;
 }
 a p.trending_league_name {
     color: initial;
@@ -292,6 +293,46 @@ a p.trending_league_name {
 #view_all_title {
     font-size: 0.775em !important;
     font-weight: 700;
+}
+.contestsLeagues_table {
+    width: 100%;
+}
+.contestLegues_table_div {
+    padding: 0 var(--finwallapp-padding) var(--finwallapp-padding);
+}
+.contestsLeagues_row {
+    border-style: solid;
+    border-color: var(--finwallapp-theme-bordercolor);
+    border-width: 0 0 1px;
+}
+.contestsLeagues_row * {
+    padding: var(--finwallapp-padding);
+}
+.contestsLeagues_row:last-of-type {
+    border-width: 0 0 0;
+}
+.contestsLeagues_row td:nth-of-type(2) > i {
+    padding: 15px 2px;
+}
+.section_spacer {
+    height: 20px;
+}
+.contestsLeagues_table:last-of-type * {
+    text-align: center;
+    padding: var(--finwallapp-padding);
+}
+.contestsLeagues_table:last-of-type a {
+    text-align: center;
+    padding: 5px var(--finwallapp-padding);
+    background-color: transparent;
+    border: 1px solid var(--correctfan_dark_yellow);
+}
+.trending_nav_div {
+    margin: 0;
+    padding: 0;
+}
+.trending_nav_div li {
+    cursor: pointer;
 }
 /** Desktop View **/
 /**@media (min-width: 1200px) {
