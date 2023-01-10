@@ -334,6 +334,9 @@ a p.trending_league_name {
 .trending_nav_div li {
     cursor: pointer;
 }
+.myProfile_div {
+    margin-bottom: 0 !important;
+}
 /** Desktop View **/
 /**@media (min-width: 1200px) {
     .signInLogo {
