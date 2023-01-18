@@ -13579,12 +13579,12 @@ linearGradient stop:last-child {
 .sidebar-wrap .sidebar {
   float: left;
   display: block;
-  min-height: 100%;
+  min-height: 100vh;
   padding: var(--finwallapp-padding);
   position: relative;
   width: 280px;
   z-index: 1;
-  border-radius: var(--finwallapp-rounded);
+  /**border-radius: var(--finwallapp-rounded);**/
   color: var(--finwallapp-theme-text);
 }
 
@@ -13725,7 +13725,7 @@ linearGradient stop:last-child {
   width: 100%;
   top: 0;
   left: 0;
-  background: var(--finwallapp-theme-color);
+  background: #000;
   opacity: 0;
 }
 
@@ -13955,7 +13955,7 @@ linearGradient stop:last-child {
 }
 
 .menu-open .sidebar-wrap.sidebar-overlay .sidebar {
-  left: 0;
+  left: -15px;
 }
 
 .menu-open .sidebar-wrap.sidebar-pushcontent+main {
@@ -14558,7 +14558,6 @@ a.card {
   left: 0;
   width: 100%;
   z-index: 9;
-  border-radius: var(--finwallapp-rounded) var(--finwallapp-rounded) 0 0;
   background-color: var(--finwallapp-footer);
   box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.07);
   -moz-box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.07);

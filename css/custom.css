@@ -337,6 +337,23 @@ a p.trending_league_name {
 .myProfile_div {
     margin-bottom: 0 !important;
 }
+.user_location {
+    opacity: 0.9;
+    color: #fff !important;
+}
+.size-14 {
+    font-size: 14px;
+}
+.size-13 {
+    font-size: 13px;
+}
+.size-15 {
+    font-size: 15px;
+}
+.lineHeight_6 {
+    line-height: 6px;
+}
+
 /** Desktop View **/
 /**@media (min-width: 1200px) {
     .signInLogo {
