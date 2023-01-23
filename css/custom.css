@@ -41,7 +41,6 @@ main.correctFanSplashBody::before {
 div.correctFanLoaderBody::before {
     content: " ";
     background-color: #4a3257;
-    background-image: var(--loader_screen);
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: center;
@@ -353,7 +352,99 @@ a p.trending_league_name {
 .lineHeight_6 {
     line-height: 6px;
 }
-
+.table_div {
+    overflow-x: auto;
+    background-color: #f2f4f4;
+    padding: 1rem;
+}
+.league {
+    text-transform: uppercase;
+    font-weight: 700;
+color: #828282;
+}
+.olympics {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #000;
+}
+.leaguesContest_table {
+    width: 100%;
+}
+.leaguesContest_table tr td {
+    border-top: 1px solid #dbdbdd;
+    border-bottom: 1px solid #dbdbdd;
+    padding: 15px;
+}
+.myLeagues_table tr td {
+    padding: 5px !important;
+}
+.bold {
+    color: #000;
+    font-weight: 700;
+  }
+.contest {
+    font-weight: 600;
+    padding: 5px 10px;
+    background-color: #6875f5;
+    border-left: 5px solid #4c56c1;
+    color: #fff;
+    margin-top: 1rem;
+}
+.play {
+    color: #2596e6;
+    text-transform: capitalize;
+}
+.caret {
+    font-size: 20px;
+}
+.leaguesContest_table tr th {
+    text-align: center;
+}
+.contests_btn, .delete_btn {
+    background-color: #0cb2e2;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    color: #fff;
+    padding: 2px 5px;
+}
+.delete_btn {
+    background-color: #f34141;
+}
+.myLeaguesBackground {
+    background-color: #fff;
+}
+.myLeagues_table tbody tr:nth-child(odd) {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+.myLeagues_table tr td {
+    border: 1px solid #e4e7ed;
+}
+.myLeaguesTitle {
+    font-size: 0.675em !important;;
+}
+.add_New {
+    color: #1892ed;
+    text-align: right;
+}
+.add_New > a > button {
+    border: none;
+    color: #1892ed;
+    background-color: transparent;
+    font-weight: 700;
+}
+.newLeague_btn {
+    border: 1px solid transparent;
+    background-color: #1f2937;
+    color: #fff;
+    padding: 0.3rem 0.8rem;
+    border-radius: 5px;
+}
+.align-right {
+    text-align: right !important;
+}
+.align-left {
+    text-align: left !important;
+}
 /** Desktop View **/
 /**@media (min-width: 1200px) {
     .signInLogo {
